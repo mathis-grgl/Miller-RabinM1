@@ -24,6 +24,7 @@ Pour nettoyer le fichier d'exécution, il suffit de lancer la commande suivante 
 
 # Remarques
 Pour clone et lancer le programme, il suffit de lancer les commandes suivantes dans le terminal:
-```git clone https://github.com/mathis-grgl/Miller-RabinM1.git
+```
+git clone https://github.com/mathis-grgl/Miller-RabinM1.git
 cd Miller-RabinM1
 make main```
