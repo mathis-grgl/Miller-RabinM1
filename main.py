@@ -1,7 +1,6 @@
 import secrets
 import matplotlib.pyplot as plt
 import sys
-from sys import argv
 
 
 
@@ -198,13 +197,19 @@ for taille in tailles_bits:
 
         # On ajoute le résultat de la fonction Eval à la liste compteurs
         compteurs.append(Eval(taille, 20))
-        print("Eval", t_bit, "pour", taille, "bits terminé.")
+        #print("Eval", t_bit, "pour", taille, "bits terminé.")
 
     # On calcule la moyenne des 100 tests
     moyenne_compteur = sum(compteurs) / 100
 
     # On ajoute la moyenne à la liste moyennes
     moyennes.append(moyenne_compteur)
+
+    # On affiche la moyenne
+    print("Moyenne pour", taille, "bits :", moyenne_compteur)
+
+    # On affiche la liste des compteurs
+    print("Liste des compteurs pour", taille, "bits :", compteurs)
 
 # On crée un graphe avec en abscisse la taille en bits du nombre et en ordonnée la moyenne sur les 100 tests de la valeur de Compteur
 plt.plot(tailles_bits, moyennes, marker='o')
